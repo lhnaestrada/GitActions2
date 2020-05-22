@@ -18,7 +18,7 @@ jobs:
       with:
         dotnet-version: 3.1.101
     - name: Build
-      run: dotnet build 
+      run: dotnet build --no-restore --verbosity normal
       working-directory: SiteAngular
     - name: Test
       run: dotnet test --no-restore --verbosity normal
